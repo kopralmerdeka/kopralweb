@@ -1,3 +1,7 @@
+## TILIL
+
+(Tanya ini lagi itu lagi)
+
 T: Apa maksud Kopral Merdeka?
 J: Kopral merdeka kependekan dari Komunitas Perangkat Lunak Merdeka,
 merupakan media komunikasi komunitas-komunitas perangkat lunak merdeka
