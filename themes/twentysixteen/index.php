@@ -24,8 +24,8 @@ get_header(); ?>
         <div class="tagline-centered">
             FAJAR BARU GERAKAN<br>PERANGKAT LUNAK MERDEKA<br>
 						<div class="tagline-button-container">
-							<button class="custom-button custom-button-red">Tentang KOPRAL Merdeka</button>
-							<button class="custom-button custom-button-green">Bergabung!</button>
+							<a href="#about"><button class="custom-button custom-button-red">Tentang KOPRAL Merdeka</button></a>
+							<a href="#join"><button class="custom-button custom-button-green">Bergabung!</button></a>
 						</div>
         </div>
       </div><!--End of block-->
@@ -55,7 +55,7 @@ get_header(); ?>
       </div><!--End of block-->
       <div id="member" class="member-container">
 				<div class="member-title">
-					<button class="custom-button custom-button-blue">Yang bergabung...</button>
+					<a href="/komunitas"><button class="custom-button custom-button-blue">Yang bergabung...</button></a>
 				</div>
 				<div class="member-content entry-content">
 					<div id="member">
@@ -106,6 +106,32 @@ get_header(); ?>
             </div>
 					</div>
 				</div>
+      </div><!--End of block-->
+			<div id="join" class="register-container">
+				<div class="register-title">Mari bergabung</div>
+				<div class="entry-content">
+        <?php
+        	echo do_shortcode("[wppb-register]");
+        ?>
+        <script>
+        var passwd = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 30);
+        document.getElementById("passw1").value = passwd;
+        document.getElementById("passw2").value = passwd;
+        document.getElementById("register").value = "Bergabung!";
+        </script>
+				</div>
+      </div><!--End of block-->
+      <div class="member-container" style="margin-bottom:-125px;background:#EEEEEE">
+        <div class="member-title" style="color:black">Didukung oleh</div>
+        <div class="entry-content centered">
+          <div>
+          <div class="supporter-logo" style="background:red"></div>
+          <div class="supporter-logo" style="background:green"></div>
+          <div class="supporter-logo" style="background:blue"></div>
+          </div>
+        </div>
+      </div><!--End of block-->
+    </div>
         <script type="text/javascript" src="wp-content/themes/twentysixteen/lib/carousel.js"></script>
         <script type="text/javascript">
           jQuery(function($) {
@@ -129,21 +155,6 @@ get_header(); ?>
               });
           });
         </script>
-      </div><!--End of block-->
-			<div id="register" class="register-container">
-				<div class="register-title">Mari bergabung</div>
-				<div class="entry-content">
-        <?php
-        	echo do_shortcode("[wppb-register]");
-        ?>
-        <script>
-        var passwd = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 30);
-        document.getElementById("passw1").value = passwd;
-        document.getElementById("passw2").value = passwd;
-        </script>
-				</div>
-      </div><!--End of block-->
-    </div>
 
 		</main><!-- .site-main -->
 	</div><!-- .content-area -->

@@ -14,7 +14,7 @@ get_header(); ?>
 ?>
 
 	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main" style="text-align:center">
+		<div id="content" class="member-list-page" role="main" style="text-align:center">
 		<div class="member-title">Komunitas yang bergabung</div>
       <?php
       //sort users descending by number of posts, display username and avatar
