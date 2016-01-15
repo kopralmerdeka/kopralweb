@@ -1543,6 +1543,7 @@ blockquote:after,
 }
 
 .site-header-main {
+	padding:15px;
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
@@ -2006,7 +2007,7 @@ body:not(.search-results) .entry-summary > :last-child,
 }
 
 .page-header {
-	border-top: 4px solid #1a1a1a;
+	/* border-top: 4px solid #1a1a1a; */
 	margin: 0 7.6923% 3.5em;
 	padding-top: 1.75em;
 }
@@ -4021,7 +4022,7 @@ p > video {
 	margin-top:20px;		
 }
 .register-container {
-	padding: 75px 0 75px;
+	padding: 75px 0 0px;
 	background:white;
 }
 .register-title {
@@ -4039,6 +4040,16 @@ p > video {
 	padding: 75px 0 75px;
 	background:#272727;
 	color:white;
+	font-family:"Arial" !important;
+}
+.social-media-button-container {
+	text-align:center;
+}
+.social-media-button {
+	display:inline-block;
+	margin:10px;
+	width:30px;
+	height:30px;
 }
 .site-footer > a{
 	text-decoration:none;
@@ -4052,10 +4063,22 @@ p > video {
 #wppb-register-user {
 	font-family:"Arial"
 }
+.wppb_form_success_message {
+	font-family:"Arial"
+}
+.wppb_form_error_message {
+	font-family:"Arial"
+}
 #wppb-register-user > .form-submit {
 	text-align:center
 }
 .wppb-send-credentials-checkbox {
+	display:none;
+}
+.wppb-default-password {
+	display:none;
+}
+.wppb-default-repeat-password {
 	display:none;
 }
 .custom-button {
@@ -4120,32 +4143,114 @@ p > video {
 	text-align:center;
 }
 
-a.social-link {
-	display:inline;
-	background-color: #aaa;
-	color:#fff !important;
-	text-decoration:none;
-	padding:6px 12px;
-	margin: 0;
-	-webkit-transition: background 0.1s linear;
-	-moz-transition: background 0.1s linear;
-	-ms-transition: background 0.1s linear;
-	-o-transition: background 0.1s linear;
-	transition: background 0.1s linear;
-}
-a:hover.facebook {
-	background-color:#4a66b7;
-}
-a:hover.twitter {
-	background-color:#00acee;
-}
-a:hover.linkedin {
-	background-color:#1b86bc;
-}
-a:hover.gplus {
-	background-color:#dd4b38;
-}
-a:hover.email {
-	background-color:#ff9600;
+.jcarousel-wrapper {
+    margin: 20px auto;
+    position: relative;
+    /* border: 10px solid #fff; */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 
+/** Carousel **/
+
+.jcarousel {
+    /* position: relative; */
+    overflow: hidden;
+    /* width: 100%; */
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    /* width: 200px; */
+    float: left;
+    /* border: 1px solid #fff; */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.jcarousel img {
+    display: block;
+    max-width: 100%;
+    height: auto !important;
+}
+
+/** Carousel Controls **/
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #4E443C;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 24px/27px Arial, sans-serif;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+.jcarousel-control-prev {
+    left: 15px;
+}
+
+.jcarousel-control-next {
+    right: 15px;
+}
+
+/** Carousel Pagination **/
+
+.jcarousel-pagination {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    margin: 0;
+}
+
+.jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+
+    font-size: 11px;
+    height: 10px;
+    width: 10px;
+    line-height: 10px;
+
+    background: #fff;
+    color: #4E443C;
+    border-radius: 10px;
+    text-indent: -9999px;
+
+    margin-right: 7px;
+
+
+    -webkit-box-shadow: 0 0 2px #4E443C;
+    -moz-box-shadow: 0 0 2px #4E443C;
+    box-shadow: 0 0 2px #4E443C;
+}
+
+.jcarousel-pagination a.active {
+    background: #4E443C;
+    color: #fff;
+    opacity: 1;
+
+    -webkit-box-shadow: 0 0 2px #F0EFE7;
+    -moz-box-shadow: 0 0 2px #F0EFE7;
+    box-shadow: 0 0 2px #F0EFE7;
+}

@@ -14,7 +14,17 @@
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
       <div class="entry-content centered site-footer-content">
-arst
+      <div class="social-media-button-container">
+        <a href="" class="social-media-button"><img class="fist" src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/twentysixteen/img/twitter.png"></a>
+        <a href="" class="social-media-button"><img class="fist" src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/twentysixteen/img/facebook.png"></a>
+        <a href="" class="social-media-button"><img class="fist" src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/twentysixteen/img/github.png"></a>
+        <a href="" class="social-media-button"><img class="fist" src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/twentysixteen/img/youtube.png"></a>
+      </div>
+				<br>
+			<div><span style="color:grey;font-size:small">Surat elektronik</span><br>info@kopralmerdeka.id</div><br>
+			<div><span style="color:grey;font-size:small">Milis</span><br>kopralmerdeka@googlegroups.com</div>
+				<br>
+				<br>
 			<?php if ( has_nav_menu( 'primary' ) ) : ?>
 				<nav class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Footer Primary Menu', 'twentysixteen' ); ?>">
 					<?php
