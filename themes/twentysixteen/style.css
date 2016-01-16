@@ -3928,7 +3928,9 @@ p > video {
 
 
 /* added-by-piko */
-
+#content {
+  margin-top:50px;
+}
 .front-page {
 	background: url("img/back.jpg") repeat scroll left top #fff;
 	background-attachment:fixed;
@@ -3936,6 +3938,7 @@ p > video {
 
 .tagline-container {
 	padding: 225px 0 150px;
+  margin-top:-50px;
 	/* background:grey; */
 }
 .about-container {
@@ -3958,6 +3961,10 @@ p > video {
 	font-size:16px;
 	color:#FFF;
 	text-align:center;
+}
+.member-list-page {
+  margin-top:-15px !important;
+	padding: 0px 0 75px;
 }
 .member-container {
 	padding: 75px 0 75px;
@@ -4022,7 +4029,7 @@ p > video {
 	margin-top:20px;		
 }
 .register-container {
-	padding: 75px 0 0px;
+	padding: 75px 0 75px;
 	background:white;
 }
 .register-title {
@@ -4035,6 +4042,9 @@ p > video {
   font-size: 35px;
   font-family: 'Montserrat', 'sans-serif';
 	margin-bottom:30px;
+}
+.supporter-logo {
+  background:grey;width:75px;height:75px;display:inline-block;margin:30px;
 }
 .site-footer {
 	padding: 75px 0 75px;
