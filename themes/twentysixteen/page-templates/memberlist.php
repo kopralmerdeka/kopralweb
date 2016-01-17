@@ -29,9 +29,10 @@ get_header(); ?>
         foreach ($uc as $key => $value) {
           $user = get_userdata($key);
           $author_posts_url = get_author_posts_url($key);
-          $post_count = $value;
-            if ($user->user_nicename != "admin") {
-      				    echo "<div class=\"member-item\" onclick=\"location.href='".$author_posts_url."';\">";
+          $count = $value;
+          $id = $user->ID;
+          if ($user->user_nicename != "admin" && $id > 3 && $count > 0) {
+                  echo "<div class=\"member-item\" onclick=\"location.href='".$author_posts_url."';\">";
       				    echo "<div class=\"member-item-logo\">";
        						echo get_avatar( $user->ID, 170 );
       						echo "</div>";

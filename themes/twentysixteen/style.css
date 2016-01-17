@@ -2802,7 +2802,7 @@ p > video {
 	.page-header,
 	.page-content,
 	.content-bottom-widgets {
-		margin-right: 23.0769%;
+		/* margin-right: 23.0769%; */
 	}
 
 	.entry-title {
@@ -3994,13 +3994,15 @@ p > video {
 	border-radius:10px;
 }
 .member-item:hover{
-	background:#F7F0F0;
+  /* border:solid 1px #F7F0F0; */
+}
+.site .avatar {
+  border-radius:0px !important;
 }
 .member-item-logo {
 	width:140px;
 	height:140px;
-	border-radius:70px;
-	background:grey;
+	/* border-radius:70px; */
 	margin:auto;
 	margin-bottom:20px;
 }
@@ -4030,7 +4032,7 @@ p > video {
 }
 .register-container {
 	padding: 75px 0 75px;
-	background:white;
+	background:#EEEEEE;
 }
 .register-title {
   text-align: center;
@@ -4043,8 +4045,11 @@ p > video {
   font-family: 'Montserrat', 'sans-serif';
 	margin-bottom:30px;
 }
+.supporter-container {
+	padding: 50px 0 50px;
+}
 .supporter-logo {
-  background:grey;width:75px;height:75px;display:inline-block;margin:30px;
+  background:white;height:150px;display:inline-block;margin:30px;
 }
 .site-footer {
 	padding: 75px 0 75px;
@@ -4065,6 +4070,8 @@ p > video {
 	text-decoration:none;
 }
 .site-footer-content {
+  margin-left:0px !important;
+  margin-right:0px !important;
 	width:100%;
 }
 #wppb_register_pre_form_message {
@@ -4116,6 +4123,13 @@ p > video {
 }
 .custom-button-green:hover {
 	background : #1e8f6b;
+}
+
+input {
+  font-family:"Arial" !important;
+}
+textarea {
+  font-family:"Arial" !important;
 }
 
 /* Semangat! */

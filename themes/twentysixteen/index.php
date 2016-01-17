@@ -84,16 +84,17 @@ get_header(); ?>
                         foreach ($uc as $key => $value) {
                           $user = get_userdata($key);
                           $author_posts_url = get_author_posts_url($key);
-                          $post_count = $value;
-                            if ($user->user_nicename != "admin") {
+                            $id = $user->ID;
+                            $count = $value;
+                            if ($user->user_nicename != "admin" && $id > 3 && $count > 0) {
                       						echo "<li>";
                       				    echo "<div class=\"member-item\" onclick=\"location.href='".$author_posts_url."';\">";
                       				    echo "<div class=\"member-item-logo\">";
                        						echo get_avatar( $user->ID, 170 );
                       						echo "</div>";
-                      				    echo "<div class=\"member-item-title\">".$user->nickname."</div>";
+                                  echo "<div class=\"member-item-title\">".$user->nickname."</div>";
                       				    echo "</div>";
-                      						echo "</li>";
+                                  echo "</li>";
                             }
                         }
                       }
@@ -121,13 +122,11 @@ get_header(); ?>
         </script>
 				</div>
       </div><!--End of block-->
-      <div class="member-container" style="margin-bottom:-125px;background:#EEEEEE">
+      <div class="member-container" style="margin-bottom:-125px;background:white">
         <div class="member-title" style="color:black">Didukung oleh</div>
-        <div class="entry-content centered">
+        <div class="entry-content centered supporter-container">
           <div>
-          <div class="supporter-logo" style="background:red"></div>
-          <div class="supporter-logo" style="background:green"></div>
-          <div class="supporter-logo" style="background:blue"></div>
+          <img src="/wp-content/uploads/2016/01/Screen-Shot-2016-01-18-at-12.12.54-AM-300x286.png" class="supporter-logo">
           </div>
         </div>
       </div><!--End of block-->
