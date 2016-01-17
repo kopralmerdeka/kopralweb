@@ -15,41 +15,16 @@
 		<footer id="colophon" class="site-footer" role="contentinfo">
       <div class="entry-content centered site-footer-content">
       <div class="social-media-button-container">
-        <a href="" class="social-media-button"><img class="fist" src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/twentysixteen/img/twitter.png"></a>
-        <a href="" class="social-media-button"><img class="fist" src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/twentysixteen/img/facebook.png"></a>
-        <a href="" class="social-media-button"><img class="fist" src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/twentysixteen/img/github.png"></a>
-        <a href="" class="social-media-button"><img class="fist" src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/twentysixteen/img/youtube.png"></a>
+        <a href="https://twitter.com/KopralMerdeka" class="social-media-button"><img class="fist" src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/twentysixteen/img/twitter.png"></a>
+        <a href="https://www.facebook.com/Kopral-Merdeka-726624010806396/?ref=aymt_homepage_panel" class="social-media-button"><img class="fist" src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/twentysixteen/img/facebook.png"></a>
+        <a href="https://github.com/kopralmerdeka" class="social-media-button"><img class="fist" src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/twentysixteen/img/github.png"></a>
+        <!--a href="" class="social-media-button"><img class="fist" src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/twentysixteen/img/youtube.png"></a-->
       </div>
 				<br>
 			<div><span style="color:grey;font-size:small">Surat elektronik</span><br>info@kopralmerdeka.id</div><br>
 			<div><span style="color:grey;font-size:small">Milis</span><br>kopralmerdeka@googlegroups.com</div>
 				<br>
 				<br>
-			<?php if ( has_nav_menu( 'primary' ) ) : ?>
-				<nav class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Footer Primary Menu', 'twentysixteen' ); ?>">
-					<?php
-						wp_nav_menu( array(
-							'theme_location' => 'primary',
-							'menu_class'     => 'primary-menu',
-						 ) );
-					?>
-				</nav><!-- .main-navigation -->
-			<?php endif; ?>
-
-			<?php if ( has_nav_menu( 'social' ) ) : ?>
-				<nav class="social-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Footer Social Links Menu', 'twentysixteen' ); ?>">
-					<?php
-						wp_nav_menu( array(
-							'theme_location' => 'social',
-							'menu_class'     => 'social-links-menu',
-							'depth'          => 1,
-							'link_before'    => '<span class="screen-reader-text">',
-							'link_after'     => '</span>',
-						) );
-					?>
-				</nav><!-- .social-navigation -->
-			<?php endif; ?>
-
 			<div class="site-info">
 				<?php
 					/**
