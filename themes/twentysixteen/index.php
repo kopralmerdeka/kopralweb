@@ -112,13 +112,15 @@ get_header(); ?>
 				<div class="register-title">Mari bergabung</div>
 				<div class="entry-content">
         <?php
-        	echo do_shortcode("[wppb-register]");
+        	/* echo do_shortcode("[wppb-register]"); */
+        	/* echo do_shortcode("[CRF_Form id='1']"); */
+        	echo do_shortcode("[bergabung]");
         ?>
         <script>
-        var passwd = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 30);
-        document.getElementById("passw1").value = passwd;
-        document.getElementById("passw2").value = passwd;
-        document.getElementById("register").value = "Bergabung!";
+        /* var passwd = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 30); */
+        /* document.getElementById("passw1").value = passwd; */
+        /* document.getElementById("passw2").value = passwd; */
+        /* document.getElementById("register").value = "Bergabung!"; */
         </script>
 				</div>
       </div><!--End of block-->
