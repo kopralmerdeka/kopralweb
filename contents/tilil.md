@@ -8,7 +8,7 @@ merupakan media komunikasi komunitas-komunitas perangkat lunak merdeka
 yang ada di seluruh Indonesia.
 
 T: Siapa/apa komunitas perangkat lunak merdeka yang dimaksud?
-J: Kelompok Pengguna Linux Indonesia (KPLI), Kelompong Pengguna
+J: Kelompok Pengguna Linux Indonesia (KPLI), Kelompok Pengguna
 Distribusi Linux/FreeBSD, Kelompok Pengguna Perangkat Lunak Sumber
 Terbuka dan Perangkat Lunak Merdeka, Kelompok Pengembang Perangkat Lunak
 Sumber Terbuka dan Perangkat Lunak Merdeka.
