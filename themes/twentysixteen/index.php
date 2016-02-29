@@ -127,8 +127,8 @@ get_header(); ?>
       <div class="member-container" style="margin-bottom:-125px;background:white">
         <div class="member-title" style="color:black">Didukung oleh</div>
         <div class="entry-content centered supporter-container">
-          <div>
-          <img src="/wp-content/uploads/2016/01/Screen-Shot-2016-01-18-at-12.12.54-AM-300x286.png" class="supporter-logo">
+          <div id="sponsorship">
+          <!--img src="/wp-content/uploads/2016/01/Screen-Shot-2016-01-18-at-12.12.54-AM-300x286.png" class="supporter-logo"-->
           </div>
         </div>
       </div><!--End of block-->
@@ -154,6 +154,15 @@ get_header(); ?>
               $('.jcarousel').jcarouselAutoscroll({
                   interval: 3000
               });
+              var sponsorBasePath = 'https://raw.githubusercontent.com/kopralmerdeka/kopral-sponsorship-logo/master/';
+              jQuery.get(sponsorBasePath + 'index.json', function(result) {
+                var data = JSON.parse(result);
+                console.log(data);
+                data.forEach(function(item){
+                  $('#sponsorship').append('<img src=\'' + sponsorBasePath + item.logo + '\' class=\'supporter-logo\'>')
+                })
+              })
+
           });
         </script>
 

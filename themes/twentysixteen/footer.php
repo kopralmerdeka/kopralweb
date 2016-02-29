@@ -22,7 +22,7 @@
       </div>
 				<br>
 			<div><span style="color:grey;font-size:small">Surat elektronik</span><br>info@kopralmerdeka.id</div><br>
-			<div><span style="color:grey;font-size:small">Milis</span><br>kopral-merdeka@googlegroups.com</div>
+			<div><span style="color:grey;font-size:small">Milis</span><br><a href="https://groups.google.com/forum/#!forum/kopral-merdeka" target="_blank">kopral-merdeka@googlegroups.com</a></div>
 				<br>
 				<br>
 			<div class="site-info">
